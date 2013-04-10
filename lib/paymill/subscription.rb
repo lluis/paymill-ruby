@@ -3,7 +3,7 @@ module Paymill
     include Paymill::Operations::Delete
     include Paymill::Operations::Update
 
-    attr_accessor :id, :offer, :livemode, :cancel_at_period_end, :canceled_at, :client, :trial_start, :trial_end
+    attr_accessor :id, :offer, :livemode, :cancel_at_period_end, :canceled_at, :client, :trial_start, :trial_end, :next_capture_at
 
     def parse_timestamps
       super
